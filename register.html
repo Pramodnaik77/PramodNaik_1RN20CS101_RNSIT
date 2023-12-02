@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="register-container">
+        <form class="register-form">
+            <h2><i class="fas fa-user-plus"></i> Register</h2>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" class="form-control" id="first_name" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="text" class="form-control" id="last_name" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-user"></i>
+                </div>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-venus-mars"></i>
+                </div>
+                <select class="form-control" id="gender" required>
+                    <option value="" disabled selected>Choose Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <input type="tel" class="form-control" id="phone_number" placeholder="Phone" required>
+            </div>
+
+            <div class="form-group">
+                <div class="icon-container">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" id="signupBtn" class="btn btn-primary"><i class="fas fa-user-plus"></i> Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></p>
+        </div>
+    </div>
+
+
+    <script src="js/register.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
